@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Nightride.fm Discord RPC",
+  "version": "1.0",
+  "description": "Displays the currently playing song on Nightride.fm as a Discord Rich Presence.",
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "host_permissions": ["*://nightride.fm/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

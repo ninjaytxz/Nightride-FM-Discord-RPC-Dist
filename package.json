@@ -1,0 +1,22 @@
+{
+  "name": "nightride-fm-rpc",
+  "version": "1.0.0",
+  "description": "Nightride FM Discord Rich Presence",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "install-service": "node install-service.js",
+    "uninstall-service": "node uninstall-service.js"
+  },
+  "author": "NINJAYTXZ",
+  "license": "MIT",
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "ws": "^8.13.0",
+    "node-windows": "^1.0.0"
+  },
+  "pkg": {
+    "scripts": ["server.js", "install-service.js", "uninstall-service.js"],
+    "targets": ["node16-win-x64"]
+  }
+}

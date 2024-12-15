@@ -1,12 +1,23 @@
 
 # Nightride FM Discord RPC
-A Discord rich presence extension for [nightride.fm](https://nightride.fm)
+**Nightride FM Discord RPC** is a tool that lets you showcase your current [Nightride.fm](https://nightride.fm) song on your Discord profile using Rich Presence.
+
+This guide will walk you through setting up the browser extension and local server needed for the RPC to work.
 
 ![nrfm logo](https://github.com/user-attachments/assets/a21ee265-7544-4661-9a3e-8dce05867664)
 
-**The extension works on the Windows version of Discord (for now)**
-
+### **What is [Discord Rich Presence (RPC)](https://github.com/discord/discord-rpc)?** <br>
+Rich Presence allows you to display detailed information on your Discord profile, such as the song you're listening to or the game you're playing.
+  
 # How to use and set up Nightride FM Discord RPC (Rich Presence)
+<br>
+
+## Prerequisites
+- Browser Compatibility: Currently supports Chromium-based browsers (Chrome, Opera, Edge, etc.). Firefox support may be added in the future.
+- Windows operating system (for now)
+- [Node.js](https://nodejs.org) installed (minimum version 16.20.2)
+
+  <br>
 
 ## 1) Load the browser extension:
 In order for the program to fetch the song details from nightride.fm, it needs
@@ -20,11 +31,9 @@ back-end server (I’ll talk about that later). Here’s how to load the extensi
 
 <br>**OR**<br>
 <br>
-Click **Load Unpacked**, locate to the Extension directory, click Select Folder
+Click **Load Unpacked**, locate to the Extension directory, click **Select Folder**
 ![LoadUnpacked-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/62ba97ce-8663-4f4c-aa42-1d407dc24fb1)
 
-***(The extension works only on Chromium based browsers such as Chrome, Opera,
-Opera GX, Edge…etc. Not FireFox for now)***
 <br> <br>
 ***(If you see any errors in the extension, don’t worry it’s just the extension trying to
 connect to the server constantly)***
@@ -37,36 +46,35 @@ this step.**
 If you don’t have NodeJs, make sure to run the “**node-v16.20.2-x64.msi**”
 file, NodeJs is incredibly essential for the RPC to work! 
 
-***(This version of NodeJs is only a minimum requirement, if you have a newer version,
-you’re also good to go)***
+***(If you have a newer version, you’re also good to go)***
 
 **• Step by step:**
 1) Double click the nodejs setup file
-2) Click Next <br>
+2) Click **Next** <br>
 ![Screenshot 2024-12-14 212722](https://github.com/user-attachments/assets/73276b4d-2baf-48c7-ad65-51ae3dafbde1)
 <br>
 
-3) Check the accept box, and click Next <br>
+3) Check the accept box, and click **Next** <br>
 ![Screenshot 2024-12-14 212805](https://github.com/user-attachments/assets/cc6c02b9-035e-4e1a-8635-dcc0ef18d497)
 <br>
 
-4) Select the installation directory and click Next <br>
+4) Select the installation directory and click **Next** <br>
 ![Screenshot 2024-12-14 213010](https://github.com/user-attachments/assets/30540383-a063-428f-b377-31362f5ff388)
 <br>
 
-5) Click Next <br>
+5) Click **Next** <br>
 ![Screenshot 2024-12-14 213117](https://github.com/user-attachments/assets/43b43e17-21ba-4c62-b2ca-9517e72a28b8)
 <br>
 
-6) Keep it as it is and click Next <br>
+6) Keep it as it is and click **Next** <br>
 ![Screenshot 2024-12-14 213124](https://github.com/user-attachments/assets/12c7bdb9-25cb-48d7-b1f4-3181e0ebc9ac)
 <br>
 
-7) Click Install, a window will pop up, click Yes <br>
+7) Click **Install**, a window will pop up, click **Yes** <br>
 ![Screenshot 2024-12-14 213129](https://github.com/user-attachments/assets/005c7120-3714-4f8d-b1c6-fae512257d83)
 <br>
 
-8) Once finished downloading, click Finish <br>
+8) Once finished downloading, click **Finish** <br>
 ![Screenshot 2024-12-14 213145](https://github.com/user-attachments/assets/1f7d224c-e3dc-4e0a-9aa0-d0e596882df0)
 <br>
 
@@ -77,7 +85,7 @@ works with a simplified diagram:
 
 ![image](https://github.com/user-attachments/assets/307926e0-093c-49b1-977c-0186be9c7b0d)
 
-The server is local, meaning it only runs on **YOUR** computer and doesn’t
+The server is local, meaning it only runs on **YOUR** computer and **DOES NOT**
 send any signal nor request to any endpoint except the extension to fetch
 the song details from the nightride.fm tab, so no need to worry about any
 malicious activity. **You can check the code in the files to verify.**
@@ -135,6 +143,17 @@ installed/uninstalled.***
 **You're now good to go!**
 
 ![image](https://github.com/user-attachments/assets/66fac479-75b4-4961-921c-0be457b7354e)
+
+## Troubleshooting
+
+- **Discord Rich Presence doesn't show**
+  
+  Ensure you’ve enabled Rich Presence in Discord settings under `Activity Privacy`. And that you've loaded the extension correctly, and you have a nightride.fm tab open.
+
+- **Server not working**
+  
+   Make sure that you've installed the service correctly, for safe measure, uninstall and reinstall the service again (with the steps provided).
+
 
 <br> 
 <br> 
